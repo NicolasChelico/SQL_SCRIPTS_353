@@ -18,7 +18,7 @@ FOREIGN KEY (ministry_ID) REFERENCES Ministries(ministry_ID)
 
 CREATE TABLE Ministries (
 ministry_ID INT PRIMARY KEY AUTO_INCREMENT,
-type VARCHAR(50)
+name VARCHAR(50)
 );
 
 CREATE TABLE Citizens (
@@ -84,6 +84,8 @@ specialization VARCHAR(250),
 FOREIGN KEY (facility_ID) REFERENCES Facilities(facility_ID),
 FOREIGN KEY (medicareNumber) REFERENCES Citizens(medicareNumber)
 );
+
+/*Atler tables*/
 
 /*Inserting rows*/
 
