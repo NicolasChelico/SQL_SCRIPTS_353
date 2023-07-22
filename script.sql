@@ -11,7 +11,7 @@ postalCode VARCHAR(50),
 province VARCHAR(50),
 capacity INT,
 webAddress VARCHAR(50),
-facilityType CHAR(1), 
+facilityType VARCHAR(50), 
 subType VARCHAR(50),
 FOREIGN KEY (ministry_ID) REFERENCES Ministries(ministry_ID)
 );
