@@ -442,8 +442,8 @@ VALUES /*
 (89, 1, '2023-07-30');    
 INSERT INTO Vaccines (vaccineID, type)
 VALUES 
-(1, 'Pfizer'),
-(2, 'Moderna'),
+(1, 'Pfizer'), 
+(2, 'Moderna'), 
 (3, 'AstraZeneca'),
 (4, 'Johnson & Johnson'),
 (5, 'Sinovac'),
