@@ -1,3 +1,6 @@
+CREATE DATABASE MainProject;
+USE MainProject;
+
 /*Creating Table*/
 CREATE TABLE Ministries (
 ministry_ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,6 +289,12 @@ VALUES
 (100, '2024-11-30', 'Grayson', 'Russell', '1998-11-28', 'USA', 'grayson.russell@email.com', 'Illinois', '555-666-5555', 'Chicago', '60601', '222 Elm St');
 
 
+UPDATE MainProject.Citizens SET medicareNumber = medicare_number, 
+                        expiryDate = expiry_date, firstName = first_name, lastName = last_name,
+                        birthDate = :irth_date, citizenship = :citizenship, email = :email, 
+                        province = :province, phone = :phone,city = :city, zip = :zip, address = :address);
+                        
+DELETE FROM MainProject.Citizens  WHERE Citizens.medicareNumber = 238523423;
 INSERT INTO Students (medicareNumber, studentID, facility_ID, grade) 
 VALUES 
       /*Ministry 1*/
@@ -702,3 +711,11 @@ ORDER BY
 -- left join: all rows of left table [x] rows in right that are in left table
 -- because we want every scenario so:
 -- Infections with No infection instance records /  Ministries with No Infections/ Infections with No Stude
+
+
+
+
+
+
+
+
